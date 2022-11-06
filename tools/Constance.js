@@ -2,6 +2,7 @@ export const BASE_URLs = {
   api: "https://discord.com/api",
   invite: "https://discord.gg",
   cdn: "https://cdn.discordapp.com",
+  backend: "http://localhost:5000",
 };
 export const DiscordEnpoints = {
   Token: BASE_URLs.api + "/oauth2/token",
@@ -19,4 +20,7 @@ export const DiscordEnpoints = {
       guild_id ? `&guild_id=${guild_id}` : ""
     }`,
   ServerInvite: (code) => `${BASE_URLs.invite}/${code}`,
+};
+export const BackendEnpoints = {
+  Guild: (id) => `${BASE_URLs.backend}/dashboard/guild?id=${id}`,
 };

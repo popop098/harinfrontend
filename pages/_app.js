@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/odometer.css";
 import "@tremor/react/dist/esm/tremor.css";
 import dynamic from "next/dynamic";
 import { parseCookie } from "../tools/utils";

@@ -11,7 +11,9 @@ const DiscordCallback = ({ token }) => {
         localStorage.removeItem("userToken");
         localStorage.removeItem("userCache");
       }
-      window.location.replace("/");
+      setTimeout(() => {
+        window.location.replace(token ? "/dashboard" : "/");
+      }, 1500);
     }
     setting(token);
   }, []);
