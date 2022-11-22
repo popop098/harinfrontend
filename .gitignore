@@ -14,7 +14,7 @@
 
 # production
 /build
-
+run.bat
 # misc
 .DS_Store
 *.pem
